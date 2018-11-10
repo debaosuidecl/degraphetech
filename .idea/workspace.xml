@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="73c3f2d6-42fa-4ca4-ba29-9f04c42319a9" name="Default" comment="" />
+    <list default="true" id="73c3f2d6-42fa-4ca4-ba29-9f04c42319a9" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server.js" afterPath="$PROJECT_DIR$/server.js" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -24,20 +27,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="server.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="server.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1105">
-              <caret line="65" column="13" lean-forward="false" selection-start-line="65" selection-start-column="13" selection-end-line="65" selection-end-column="13" />
+            <state relative-caret-position="153">
+              <caret line="96" column="18" lean-forward="true" selection-start-line="96" selection-start-column="18" selection-end-line="96" selection-end-column="18" />
               <folding>
-                <marker date="1541853397939" expanded="true" signature="1169:1198" ph="..." />
-                <marker date="1541853397939" expanded="true" signature="1298:1319" ph="..." />
+                <marker date="1541868261480" expanded="true" signature="1209:1238" ph="..." />
+                <marker date="1541868261480" expanded="true" signature="1338:1359" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="34">
@@ -92,8 +95,8 @@
         <option value="$PROJECT_DIR$/client/package.json" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/config/config.js" />
-        <option value="$PROJECT_DIR$/server.js" />
         <option value="$PROJECT_DIR$/client/src/containers/ContactForm/ContactForm.js" />
+        <option value="$PROJECT_DIR$/server.js" />
       </list>
     </option>
   </component>
@@ -188,12 +191,12 @@
       <option name="presentableId" value="Default" />
       <updated>1541841734802</updated>
       <workItem from="1541841736263" duration="12411000" />
-      <workItem from="1541861075661" duration="907000" />
+      <workItem from="1541861075661" duration="3391000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13318000" />
+    <option name="totallyTimeSpent" value="15802000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -241,8 +244,8 @@
         <state relative-caret-position="1105">
           <caret line="65" column="13" lean-forward="true" selection-start-line="65" selection-start-column="13" selection-end-line="65" selection-end-column="13" />
           <folding>
-            <marker date="1541853397939" expanded="true" signature="1169:1198" ph="..." />
-            <marker date="1541853397939" expanded="true" signature="1298:1319" ph="..." />
+            <marker date="1541868261480" expanded="true" signature="1209:1238" ph="..." />
+            <marker date="1541868261480" expanded="true" signature="1338:1359" ph="..." />
           </folding>
         </state>
       </provider>
@@ -327,17 +330,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1105">
-          <caret line="65" column="13" lean-forward="false" selection-start-line="65" selection-start-column="13" selection-end-line="65" selection-end-column="13" />
-          <folding>
-            <marker date="1541853397939" expanded="true" signature="1169:1198" ph="..." />
-            <marker date="1541853397939" expanded="true" signature="1298:1319" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/src/containers/ContactForm/ContactForm.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -353,6 +345,17 @@
         <state relative-caret-position="34">
           <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="96" column="18" lean-forward="true" selection-start-line="96" selection-start-column="18" selection-end-line="96" selection-end-column="18" />
+          <folding>
+            <marker date="1541868261480" expanded="true" signature="1209:1238" ph="..." />
+            <marker date="1541868261480" expanded="true" signature="1338:1359" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -6,7 +6,7 @@ const config = require('./config/config');
 
 
 app.use(bodyParser.json());
-
+app.use(express.static('client/build'));
 // set tranporter
 let transporter = nodemailer.createTransport({
     host: "weaver.whogohost.com",
@@ -90,18 +90,17 @@ app.post('/send', (req, res, next) => {
         })
     }
 
-})
-
-
-
-
-
-
-app.use(express.static('./client/public'));
-
-app.get('*', (req, res)=>{
-    res.sendFile(path.join(__dirname, './client/public', 'index.html'))
 });
+
+
+if(process.env.NODE_ENV === "production"){
+    const path = require('path');
+    app.get('/*', (req, res)=> {
+        res.sendfile(path.resolve(__dirname, "../client", "index.html"))
+    })
+}
+
+
 
 
 const port = process.env.PORT || 3001;

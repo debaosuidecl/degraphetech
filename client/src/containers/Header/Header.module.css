@@ -1,0 +1,27 @@
+.Header{
+    background: #222;
+    height: 51px;
+    overflow: hidden;
+    position: fixed;
+    z-index: 50;
+    width: 100%;
+    transition: .5s;
+
+}
+.TopScroll{
+    padding-top: 0;
+}
+
+@media(min-width: 750px){
+    .Header{
+        background: none;
+    }
+
+    .Scrolled{
+        background: #222;
+        transition: .5s;
+    }
+    .TopScroll{
+        padding-top: 20px;
+    }
+}

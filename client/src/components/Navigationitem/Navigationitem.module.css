@@ -1,0 +1,86 @@
+.NavigationItem {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+
+}
+
+.NavigationItem a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    padding: 18px 25px;
+    display: block;
+    font-size: 1em;
+    font-family: 'Varela Round', sans-serif ;
+}
+.NavigationItem a.Active{
+    background: #f05a28;
+    transition: .8s;
+
+}
+.NavigationItem a.ActiveTop{
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    transition: .8s;
+    background: #f05a28;
+}
+.NavigationItem a.TopLinks{
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    border-radius: 1px;
+    padding: 15px 15px;
+    margin-right: 0;
+}
+.Navigation a.TopLinks:hover{
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    border-radius: 1px;
+    background: #f05a28;
+}
+.NavigationItem a:hover{
+    background: #f05a28;
+    animation: NavAnimation 0.2s linear;
+}
+
+@media(min-width: 650px){
+    .NavigationItem a{
+        font-size: 13px;
+    }
+
+
+}
+
+@media(min-width: 750px){
+    .NavigationItem a.ActiveTop{
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        border-radius: 50px;
+        transition: .8s;
+        background: #f05a28;
+    }
+    .NavigationItem a.TopLinks{
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        border-radius: 50px;
+        padding: 15px 15px;
+        margin-right: 15px;
+    }
+    .Navigation a.TopLinks:hover{
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        border-radius: 50px;
+        background: #f05a28;
+    }
+}
+
+@keyframes NavAnimation{
+    0%, 100%{
+       transform: scale(1);
+    }
+    50%{
+        transform: scale(1.04);
+    }
+}

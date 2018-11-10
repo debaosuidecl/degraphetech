@@ -1,0 +1,26 @@
+.Toggler{
+    margin: 10px 20px;
+    float: right;
+    width: 40px;
+    cursor: pointer;
+    height: 20px;
+}
+
+
+.Toggler div{
+    background: #eee;
+    padding: 2px;
+    margin-bottom: 5px;
+    transition: .1s;
+    width: 50%;
+
+}
+
+
+
+
+@media(min-width: 750px){
+    .Toggler{
+        display: none;
+    }
+}

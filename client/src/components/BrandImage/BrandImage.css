@@ -1,0 +1,114 @@
+.Brand{
+    overflow: hidden;
+    position: relative;
+}
+
+.BrandImagePicOne{
+    background: url('../../images/blackwhite.jpg') no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 300px;
+    transition: 2s;
+    z-index: -1000;
+
+
+
+}
+.BrandImagePicTwo{
+    background: url('../../images/ContactImage.jpg') no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 300px;
+    transition: 1s;
+
+}
+.Brand .BrandImagePicOne.BrandImageOnHover, .Brand .BrandImagePicTwo.BrandImageOnHover{
+    -webkit-animation: 15s picZoom infinite;
+    -o-animation: 15s picZoom infinite;
+    animation: 15s picZoom infinite
+
+
+}
+
+ .Brand .Overlay{
+    height: 300px;
+    background: rgba(0,0,0,.8);
+    transition: 2s ease-in;
+     position: absolute;
+     width: 100%
+
+
+
+
+ }
+
+.Brand .Overlay:hover{
+    background: rgba(0,0,0,.5);
+    transition: .8s ease-out;
+
+}
+
+.Brand h1{
+    font-weight: 200;
+    font-family: sans-serif;
+    position: absolute;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 20;
+    cursor: pointer;
+    transition: 1s;
+
+}
+.Brand h1:hover{
+
+    transition: 1s;
+    background: rgba(0,0,0,.5);
+}
+
+
+.Brand h1 span{
+    color: #e8310d;
+}
+
+
+@media(min-width: 550px){
+    .Brand h1{
+        font-size: 34px;
+    }
+}
+
+@keyframes picZoom {
+    0%,100%{
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+    }
+    50%{
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+
+}
+
+@supports (-ms-ime-align: auto) {
+    .Brand .BrandImagePicOne.BrandImageOnHover, .Brand .BrandImagePicTwo.BrandImageOnHover{
+        animation: none;
+    }
+    .Brand h1.headerClassOne:hover{
+        color: white;
+        transition: 1s;
+    }
+}

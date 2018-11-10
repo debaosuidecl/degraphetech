@@ -1,0 +1,53 @@
+.AboutCont{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 40px;
+
+}
+
+.About{
+    box-sizing: border-box;
+    padding: 0;
+    font-family: medium-content-serif-font,Georgia,Cambria,"Times New Roman",Times,serif;
+
+
+}
+.About h1{
+    color: #f05a28;
+    font-size: 32px;
+    font-family: sans-serif;
+
+
+
+    text-align: center;
+
+}
+
+.AboutContainer{
+    display: block;
+    padding: 0;
+}
+
+.AboutContainer .AboutText{
+    margin-bottom: 40px;
+}
+
+
+@media(max-width: 400px){
+    .AboutContainer .AboutText{
+        font-size: 14px;
+    }
+}
+
+@media(min-width: 790px){
+
+
+    .AboutContainer .AboutText{
+        text-align: left;
+        float: left;
+        font-size: 16px;
+    }
+
+
+}

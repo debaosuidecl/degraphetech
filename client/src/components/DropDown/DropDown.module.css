@@ -1,0 +1,23 @@
+.DropDown{
+    position: fixed;
+    z-index: 49;
+    background: rgba(0,0,0,0.9);
+    width: 100%;
+    margin-top: -100vh; /*50px shows all the dropdown*/
+    transition: .5s all ease;
+}
+
+.MobileOnly{
+    display: block;
+    transition: .2s all ease;
+}
+
+.Dropped{
+    margin-top: 50px;
+}
+
+@media(min-width: 750px){
+    .MobileOnly{
+        display: none;
+    }
+}

@@ -3,6 +3,8 @@ const app = express();
 const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
 const config = require('./config/config');
+const path = require('path');
+
 
 
 app.use(bodyParser.json());
@@ -94,12 +96,10 @@ app.post('/send', (req, res, next) => {
 
 
 if(process.env.NODE_ENV === 'production'){
-    const path = require('path');
-    app.get('*', (req, res)=> {
+    app.get('/*', (req, res)=> {
         res.sendFile(path.resolve(__dirname, "client", 'build', "index.html"))
     })
 }
-
 
 
 

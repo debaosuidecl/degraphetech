@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
-const config = require('./config/config');
+const config = require('./config/config').get(process.env.NODE_ENV);
 const path = require('path');
 
 
@@ -81,14 +81,13 @@ app.post('/send', (req, res, next) => {
                     } else{
                         res.json({
                             msg: 'Your message sent to you and your client'
-                        })
-                        console.log(data);
+                        });
                     }
                 })
 
 
             }
-            console.log(data);
+
         })
     }
 

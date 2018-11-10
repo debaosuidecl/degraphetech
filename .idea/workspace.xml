@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="73c3f2d6-42fa-4ca4-ba29-9f04c42319a9" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/.gitignore" afterPath="$PROJECT_DIR$/client/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/public/index.html" afterPath="$PROJECT_DIR$/client/public/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -219,12 +216,12 @@
       <option name="presentableId" value="Default" />
       <updated>1541841734802</updated>
       <workItem from="1541841736263" duration="12411000" />
-      <workItem from="1541861075661" duration="10658000" />
+      <workItem from="1541861075661" duration="10682000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23069000" />
+    <option name="totallyTimeSpent" value="23093000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">

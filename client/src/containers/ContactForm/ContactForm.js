@@ -58,6 +58,27 @@ class ContactForm extends Component{
                 shouldBeValidated: true
 
             },
+            serviceType: {
+                elementType: 'select',
+                elementConfig: {
+                    options: [{value: 'corporate', displayValue: 'Corporate Website'},
+                        {value: 'e-commerce', displayValue: 'E-Commerce Website'},
+                        {value: 'SEO', displayValue: 'SEO Solutions'},
+                        {value: 'personal', displayValue: 'Personal Website'},
+
+                    ],
+                },
+                value: '',
+                validation: {
+                    required: true,
+                },
+                valid: false,
+                touched: false,
+                blurred: false,
+                disabled: false,
+                shouldBeValidated: true
+            },
+
             message: {
                 elementType: 'textarea',
 
@@ -135,7 +156,8 @@ class ContactForm extends Component{
         const email = {
             name: this.state.controls.name.value,
             email: this.state.controls.email.value,
-            message: this.state.controls.message.value
+            message: this.state.controls.message.value,
+            serviceType: this.state.controls.serviceType.value
         };
         axios.post('/send', email)
 

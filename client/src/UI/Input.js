@@ -51,11 +51,15 @@ const input = props => {
             break;
         case ('select'):
             inputElement = <select
-                className={inputClass}
+                className={`${inputClass} Select`}
                 value={props.value} onChange={props.changed}>
+                <option value="" disabled selected >Select a Service type</option>
                 {props.elementConfig.options.map(option=> (
+                    
                     <option key={option.value} value={option.value}>{option.displayValue}</option>
+                    
                 ))}
+                
             </select>;
             break;
         default:

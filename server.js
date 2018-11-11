@@ -38,12 +38,13 @@ app.post('/send', (req, res, next) => {
     let name = req.body.name;
     let email = req.body.email;
     let message = req.body.message;
+    let serviceType = req.body.serviceType;
     /*if (req.body !== {name, email, message}){
         res.status(404).json({
             msg: 'Cannot Send error'
         })
     }*/
-    if (name === undefined || email===undefined || message=== undefined){
+    if (name === undefined || email===undefined || message=== undefined || serviceType === undefined){
         res.json({
             msg: 'Cannot Submit Empty Form Please enter appropriate details'
         })
@@ -51,12 +52,13 @@ app.post('/send', (req, res, next) => {
         let content = `<div style="min-height: 300px; padding: 20px; width: 80%; background: #eeeeee; border-radius: 30px;">
                    <div style="width: 80%">
                    <h1 style="font-size: 2em; color: #a24215 ;">An Order just came from  ${name}</h1>
+                   <h1>Service type : ${serviceType}</h1>
                     <h2>The email of the client is ${email}</h2>
                     <h3>Here is the message:</h3>
                     <h2 style="font-family: 'ubuntu'; color: white; background: #555; padding: 15px;">${message}</h2>   
                     <h4 style="margin-top: 40px;">Reply the <a href="mailto:${email}?Subject=Customer%20message:%20">Client</a></h4> 
                     </div>
-                    
+                 
                        </div>
    
 `;
@@ -64,7 +66,7 @@ app.post('/send', (req, res, next) => {
         let mail = {
             from: " Degraphe Tech <deba@yeme.com.ng>",
             to: 'debaosuidecl@gmail.com',  //Change to email address that you want to receive messages on
-            subject: `New message on degaphetech.com.ng from ${name}`,
+            subject: `New message on degaphetech.com.ng from ${name} (${serviceType})`,
             html: content
         }
 

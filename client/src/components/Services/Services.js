@@ -50,7 +50,7 @@ class Services extends Component{
     pageLoadHandler = ()=> {
         const OFFSET = 600;
         let ContactPosVar = document.querySelector('#Contact').offsetTop - OFFSET
-        let ServicePosVar = document.querySelector('#Job').offsetTop - OFFSET -600
+        let ServicePosVar = document.querySelector('#Job').offsetTop - OFFSET +100
 
         let navPos = {
             ...this.state.navPos,

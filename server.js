@@ -23,6 +23,7 @@ let transporter = nodemailer.createTransport({
     }
 });
 
+
 transporter.verify((error, success) => {
     if (error) {
         console.log(error);
@@ -38,7 +39,7 @@ app.post('/send', (req, res, next) => {
     let email = req.body.email;
     let message = req.body.message;
     /*if (req.body !== {name, email, message}){
-        res.sendStatus(404).json({
+        res.status(404).json({
             msg: 'Cannot Send error'
         })
     }*/
@@ -47,10 +48,17 @@ app.post('/send', (req, res, next) => {
             msg: 'Cannot Submit Empty Form Please enter appropriate details'
         })
     } else{
-        let content = `
-    <h1 style="font-size: 2em; color: green;">An Order just came from  ${name} < ${email}>:</h1>
-    <h3>Here is the message:</h3>
-   <p style="font-family: 'ubuntu'">${message}</p> 
+        let content = `<div style="min-height: 300px; padding: 20px; width: 80%; background: #eeeeee; border-radius: 30px;">
+                   <div style="width: 80%">
+                   <h1 style="font-size: 2em; color: #a24215 ;">An Order just came from  ${name}</h1>
+                    <h2>The email of the client is ${email}</h2>
+                    <h3>Here is the message:</h3>
+                    <h2 style="font-family: 'ubuntu'; color: white; background: #555; padding: 15px;">${message}</h2>   
+                    <h4 style="margin-top: 40px;">Reply the <a href="mailto:${email}?Subject=Customer%20message:%20">Client</a></h4> 
+                    </div>
+                    
+                       </div>
+   
 `;
 
         let mail = {
@@ -67,23 +75,24 @@ app.post('/send', (req, res, next) => {
                 })
             }
             else {
-                let mailToClient = {
+               /* let mailToClient = {
                     from: " Degraphe Tech <deba@yeme.com.ng>",
                     to: `${email}`,  //Change to email address that you want to receive messages on
                     subject: `Thank You For Contacting Us!!!`,
                     html: `<h1>Hi there ${name} We will get to you shortly</h1>`
-                };
-                transporter.sendMail(mailToClient, (err, data)=> {
+                };*/
+                /*transporter.sendMail(mailToClient, (err, data)=> {
                     if (err){
                         res.json({
                             msg: 'Your message was not sent to the client'
                         })
-                    } else{
+                    } else{*/
+                console.log(data);
                         res.json({
-                            msg: 'Your message sent to you and your client'
+                            msg: 'Your message has been sent'
                         });
-                    }
-                })
+               /*     }
+                })*/
 
 
             }

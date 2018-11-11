@@ -3,7 +3,7 @@
     height: 51px;
     overflow: hidden;
     position: fixed;
-    z-index: 50;
+    z-index: 350;
     width: 100%;
     transition: .5s;
 
@@ -12,7 +12,7 @@
     padding-top: 0;
 }
 
-@media(min-width: 750px){
+@media(min-width: 950px){
     .Header{
         background: none;
     }

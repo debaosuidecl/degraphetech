@@ -6,7 +6,7 @@
     display: none
 }
 
-@media(min-width: 750px){
+@media(min-width: 950px){
     .DesktopOnly{
         display: block;
     }

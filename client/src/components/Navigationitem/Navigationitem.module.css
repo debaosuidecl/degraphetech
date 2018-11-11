@@ -12,7 +12,7 @@
     cursor: pointer;
     padding: 18px 25px;
     display: block;
-    font-size: 1em;
+    font-size: 10px;
     font-family: 'Varela Round', sans-serif ;
 }
 .NavigationItem a.Active{
@@ -34,16 +34,7 @@
     padding: 15px 15px;
     margin-right: 0;
 }
-.Navigation a.TopLinks:hover{
-    -webkit-border-radius: 1px;
-    -moz-border-radius: 1px;
-    border-radius: 1px;
-    background: #f05a28;
-}
-.NavigationItem a:hover{
-    background: #f05a28;
-    animation: NavAnimation 0.2s linear;
-}
+
 
 @media(min-width: 650px){
     .NavigationItem a{
@@ -53,7 +44,7 @@
 
 }
 
-@media(min-width: 750px){
+@media(min-width: 950px){
     .NavigationItem a.ActiveTop{
         -webkit-border-radius: 50px;
         -moz-border-radius: 50px;
@@ -68,12 +59,28 @@
         padding: 15px 15px;
         margin-right: 15px;
     }
-    .Navigation a.TopLinks:hover{
+    .NavigationItem a.TopLinks{
         -webkit-border-radius: 50px;
         -moz-border-radius: 50px;
         border-radius: 50px;
-        background: #f05a28;
+        padding: 15px 15px;
+        margin-right: 15px;
     }
+
+    @media(hover:hover){
+        .Navigation a.TopLinks:hover{
+            -webkit-border-radius: 50px;
+            -moz-border-radius: 50px;
+            border-radius: 50px;
+            background: #f05a28;
+        }
+        .NavigationItem a:hover{
+            background: #f05a28;
+            animation: NavAnimation 0.2s linear;
+        }
+    }
+
+
 }
 
 @keyframes NavAnimation{
@@ -83,4 +90,9 @@
     50%{
         transform: scale(1.04);
     }
+}
+
+@supports (-ms-ime-align: auto) {
+
+
 }

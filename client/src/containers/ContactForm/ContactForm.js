@@ -17,7 +17,8 @@ class ContactForm extends Component{
                 elementConfig: {
                     type: 'name',
                     placeholder: 'Enter your name',
-                    id: "name"
+                    id: "name",
+                    name: "name"
                 },
 
                 value: '',
@@ -39,7 +40,8 @@ class ContactForm extends Component{
                 elementConfig: {
                     type: 'email',
                     placeholder: 'Enter your email',
-                    id: "email"
+                    id: "email",
+                    name: "_replyto"
                 },
 
                 value: '',
@@ -62,7 +64,8 @@ class ContactForm extends Component{
                 elementConfig: {
                     type: 'message',
                     placeholder: 'Enter Your message',
-                    id: "message"
+                    id: "message",
+                    name: "message"
                 },
 
                 value: '',
@@ -220,6 +223,7 @@ class ContactForm extends Component{
                             fontSize: '14px'
                         }}>Loading...</h4>: null}
                         </Button>
+                    <input type="hidden" name="_next" value="/thanks"/>
                 </form>
             </div>
         )

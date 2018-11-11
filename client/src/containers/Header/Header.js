@@ -4,7 +4,7 @@ import classes from './Header.module.css'
 import Toggler from '../../components/Toggler/Toggler'
 import Logo from '../../components/Logo/Logo'
 import DropDown from '../../components/DropDown/DropDown'
-
+import BackDrop from '../../components/BackDrop/BackDrop'
 
 class Header extends Component{
     state={
@@ -36,6 +36,7 @@ class Header extends Component{
                     <NavContainer/>
                 </div>
                 <DropDown shouldDropDown={this.state.isToggled}/>
+                <BackDrop clicked={this.toggleHandler} show={this.state.isToggled}/>
             </React.Fragment>
 
         )

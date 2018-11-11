@@ -2,12 +2,29 @@
 .ServicesCont{
     margin: 20px auto 50px;
     text-align: center;
+    transform: scale(.2) rotate(10deg);
+    transition: .5s;
+    opacity: 0.3;
+
+
 
 
 }
+
+.ServicesCont.ScrolledToServices{
+    -webkit-transform: scale(1) rotate(0);
+    -moz-transform: scale(1) rotate(0);
+    -ms-transform: scale(1) rotate(0);
+    -o-transform: scale(1) rotate(0);
+    transform: scale(1) rotate(0);
+    transition: .5s;
+    opacity: 1
+}
+
+
 .Services{
 
-}
+    }
 
 .Services h1 {
     color: #f05a28;

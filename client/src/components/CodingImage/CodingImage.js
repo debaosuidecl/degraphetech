@@ -9,7 +9,7 @@ class CodingImage extends Component{
         words: ['Web Development', 'SEO Solutions', 'Graphics Design', 'Personal Branding'],
         txt: '',
         wordIndex: 0,
-        wait: parseInt(3000),
+        wait: parseInt(2000),
         isDeleting: false,
     };
 
@@ -84,7 +84,9 @@ class CodingImage extends Component{
                    <AnchorLink style={{
                        textDecoration: 'none'
                    }} href="#Contact" offset="100"> <button className={classes.GetInTouch}>Get in Touch</button></AnchorLink>
-                   <button className={classes.About}>About</button>
+                   <AnchorLink style={{
+                       textDecoration: 'none'
+                   }} href="#About"><button className={classes.About}>About</button></AnchorLink>
                </div>
            )
 

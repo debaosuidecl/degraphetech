@@ -1,6 +1,6 @@
 import React,{Component} from 'react';
 import NavigationItem from '../Navigationitem/Navigationitem'
-import classes from'./Navigationitems.module.css'
+import classes from './Navigationitems.module.css'
 
 
 
@@ -21,8 +21,11 @@ class NavigationItems extends Component{
             ContactPos: 2020
         }
     };
+    componentDidMount(){
 
+    }
     componentDidUpdate(){
+
         this.pageLoadHandler()
     }
 
@@ -36,7 +39,7 @@ class NavigationItems extends Component{
        let HomePosVar = document.querySelector('#home').offsetTop - OFFSET
        let AboutPosVar = document.querySelector('#About').offsetTop - OFFSET
        let ServicePosVar = document.querySelector('#Job').offsetTop - OFFSET
-       let ContactPosVar = document.querySelector('#Contact').offsetTop - OFFSET
+       let ContactPosVar = document.querySelector('#Contact').offsetTop - OFFSET -400;
        let HomeHeightVar = document.querySelector('#home').clientHeight;
        let AboutHeightVar = document.querySelector('#About').clientHeight;
        let ServiceHeightVar = document.querySelector('#Job').clientHeight;

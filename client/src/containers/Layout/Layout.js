@@ -6,6 +6,7 @@ import classes from './Layout.module.css'
 import Services from '../../components/Services/Services'
 import ContactForm from '../../containers/ContactForm/ContactForm'
 import BrandImage from '../../components/BrandImage/BrandImage'
+import Footer from '../../components/Footer/Footer'
 
 class Layout extends Component{
 
@@ -31,7 +32,7 @@ class Layout extends Component{
         this.setState({isHoveredOne: false})
     }
     mouseOverTwoHandler = (e)=> {
-        console.log(e);
+
         this.setState({isHoveredTwo: true})
     }
     mouseLeaveTwoHandler = (e)=> {
@@ -64,7 +65,7 @@ class Layout extends Component{
 
                 />
                 <ContactForm/>
-
+                <Footer/>
             </div>
         )
     }
